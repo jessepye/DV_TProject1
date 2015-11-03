@@ -25,5 +25,6 @@ Second image:
 
 ***
 
+Our chart looks at the graduation rates of different types of schools. To form the crosstab, we used the governance type, total cost and school size as dimensions. Dividing the schools into these categories provided a look into how students perform at different types of schools. Our KPI is a measure of how many students graduate the college. If the class has a 50% graduation rate, they recieve a "PASS" rating. Otherwise they recieve a "FAIL" rating. This KPI is show using green and red numbers. For-profit colleges have the lowest graduation rates and never rise above the 50% mark. As schools get larger, they typically have higher graduation rates and have a great change of recieving a "PASS" rating.
 Third image:
 ![](Crosstab w KPI.jpg)
