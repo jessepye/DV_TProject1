@@ -1,0 +1,10 @@
+---
+title: "TProject 1 - U.S. College Data"
+author: "Daniel Schlomer, Jesse Pye"
+date: Nov. 2, 2015
+output: html_document
+---
+
+This is an html file that documents the steps to reproduce our project . This html file presents a visual story about our data and what we discovered about our data using visualization and workflow techniques.
+
+The first thing we did was locate a source of data. We used
