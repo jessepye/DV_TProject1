@@ -7,15 +7,19 @@ output: html_document
 
 This is an html file that documents the steps to reproduce our project . This html file presents a visual story about our data and what we discovered about our data using visualization and workflow techniques.
 
-The first thing we did was locate a source of data. We used...
+The first thing we did was locate a source of data. We used college data from data.gov. This huge dataset had information for over 7000 U.S. Colleges, including information like average SAT scores, tuition, admission rates, and more.
 
 ***
+
+For our first analysis, by comparing two measures, we created a scatter plot, comparing average SAT scores against admission rates. We also labled the outliers on this graph. The graph shows a clear correlation between SAT scores and admission rates.
 
 First image:
 ![](Scatterplot.jpg)
 
 ***
+
 For our second analysis, we looked at the cost of persuing different degrees at schools with 20,000 students or more. In this bar chart, colleges are grouped according to the most popular degree type from that university and by their cost. "Low"" cost colleges cost less than $15,000/year, (including tuition, books, and living expenses), "medium" cost less than $30,000, and "high" cost more than $30,000. A reference line shows the median cost for each category.
+
 Second image:
 ![](Bar Chart.jpg)
 
