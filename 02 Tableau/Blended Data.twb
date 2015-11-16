@@ -1,0 +1,689 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 9100.15.1013.2200                                -->
+<workbook source-platform='win' version='9.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='College 2013 (Only the useful columns)' inline='true' name='textscan.42323.911303043984' version='9.1'>
+      <connection class='textscan' directory='C:/Users/Jesse/OneDrive/Documents/DataVisualization/DV_TProject1/01 Data' filename='College 2013 (Only the useful columns).csv' password='' server='' username=''>
+        <relation name='College 2013 (Only the useful columns)#csv' table='[College 2013 (Only the useful columns)#csv]' type='table'>
+          <columns character-set='windows-1252' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='INSTNM' ordinal='0' />
+            <column datatype='integer' name='SAT_AVG' ordinal='1' />
+            <column datatype='real' name='ADM_RATE' ordinal='2' />
+            <column datatype='integer' name='UGDS' ordinal='3' />
+            <column datatype='integer' name='CONTROL' ordinal='4' />
+            <column datatype='integer' name='COSTT4_A' ordinal='5' />
+            <column datatype='real' name='C150_4' ordinal='6' />
+            <column datatype='integer' name='PREDDEG' ordinal='7' />
+            <column datatype='string' name='CITY' ordinal='8' />
+            <column name='STABBR' ordinal='9' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>INSTNM</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[INSTNM]</local-name>
+            <parent-name>[College 2013 (Only the useful columns)#csv]</parent-name>
+            <remote-alias>INSTNM</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SAT_AVG</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SAT_AVG]</local-name>
+            <parent-name>[College 2013 (Only the useful columns)#csv]</parent-name>
+            <remote-alias>SAT_AVG</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ADM_RATE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ADM_RATE]</local-name>
+            <parent-name>[College 2013 (Only the useful columns)#csv]</parent-name>
+            <remote-alias>ADM_RATE</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>UGDS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[UGDS]</local-name>
+            <parent-name>[College 2013 (Only the useful columns)#csv]</parent-name>
+            <remote-alias>UGDS</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CONTROL</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CONTROL]</local-name>
+            <parent-name>[College 2013 (Only the useful columns)#csv]</parent-name>
+            <remote-alias>CONTROL</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COSTT4_A</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[COSTT4_A]</local-name>
+            <parent-name>[College 2013 (Only the useful columns)#csv]</parent-name>
+            <remote-alias>COSTT4_A</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>C150_4</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[C150_4]</local-name>
+            <parent-name>[College 2013 (Only the useful columns)#csv]</parent-name>
+            <remote-alias>C150_4</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PREDDEG</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PREDDEG]</local-name>
+            <parent-name>[College 2013 (Only the useful columns)#csv]</parent-name>
+            <remote-alias>PREDDEG</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CITY</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CITY]</local-name>
+            <parent-name>[College 2013 (Only the useful columns)#csv]</parent-name>
+            <remote-alias>CITY</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>STABBR</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[STABBR]</local-name>
+            <parent-name>[College 2013 (Only the useful columns)#csv]</parent-name>
+            <remote-alias>STABBR</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[College 2013 (Only the useful columns)#csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;windows-1252&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Adm Rate' datatype='real' name='[ADM_RATE]' role='measure' type='quantitative' />
+      <column caption='C150 4' datatype='real' name='[C150_4]' role='measure' type='quantitative' />
+      <column caption='City' datatype='string' name='[CITY]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Control' datatype='integer' name='[CONTROL]' role='measure' type='quantitative' />
+      <column caption='Costt4 A' datatype='integer' name='[COSTT4_A]' role='measure' type='quantitative' />
+      <column caption='Instnm' datatype='string' name='[INSTNM]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Preddeg' datatype='integer' name='[PREDDEG]' role='measure' type='quantitative' />
+      <column caption='Sat Avg' datatype='integer' name='[SAT_AVG]' role='measure' type='quantitative' />
+      <column caption='Stabbr' datatype='string' name='[STABBR]' role='dimension' type='nominal' />
+      <column caption='Ugds' datatype='integer' name='[UGDS]' role='measure' type='quantitative' />
+      <column-instance column='[COSTT4_A]' derivation='Avg' name='[avg:COSTT4_A:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[COSTT4_A]' derivation='Sum' name='[sum:COSTT4_A:qk]' pivot='key' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.5' measure-ordering='alphabetic' measure-percentage='0.4' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#1f77b4'>
+              <bucket>&quot;[textscan.42323.911303043984].[avg:COSTT4_A:qk]&quot;</bucket>
+            </map>
+            <map to='#1f77b4'>
+              <bucket>&quot;[textscan.42323.911303043984].[sum:COSTT4_A:qk]&quot;</bucket>
+            </map>
+            <map to='#2ca02c'>
+              <bucket>&quot;[textscan.42323.911456365742].[avg:COSTT4_A_2012:qk]&quot;</bucket>
+            </map>
+            <map to='#ff7f0e'>
+              <bucket>&quot;[textscan.42323.911456365742].[sum:COSTT4_A_2012:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <datasource-dependencies datasource='textscan.42323.911456365742'>
+        <column caption='Costt4 A 2012' datatype='integer' name='[COSTT4_A_2012]' role='measure' type='quantitative' />
+        <column-instance column='[COSTT4_A_2012]' derivation='Avg' name='[avg:COSTT4_A_2012:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[COSTT4_A_2012]' derivation='Sum' name='[sum:COSTT4_A_2012:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+    </datasource>
+    <datasource caption='College 2012 (Only the useful columns)' inline='true' name='textscan.42323.911456365742' version='9.1'>
+      <connection class='textscan' directory='C:/Users/Jesse/OneDrive/Documents/DataVisualization/DV_TProject1/01 Data' filename='College 2012 (Only the useful columns).csv' password='' server='' username=''>
+        <relation name='College 2012 (Only the useful columns)#csv' table='[College 2012 (Only the useful columns)#csv]' type='table'>
+          <columns character-set='windows-1252' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='INSTNM' ordinal='0' />
+            <column datatype='integer' name='SAT_AVG_2012' ordinal='1' />
+            <column datatype='real' name='ADM_RATE_2012' ordinal='2' />
+            <column datatype='integer' name='UGDS_2012' ordinal='3' />
+            <column datatype='integer' name='CONTROL_2012' ordinal='4' />
+            <column datatype='integer' name='COSTT4_A_2012' ordinal='5' />
+            <column datatype='real' name='C150_4_2012' ordinal='6' />
+            <column datatype='integer' name='PREDDEG_2012' ordinal='7' />
+            <column datatype='string' name='CITY' ordinal='8' />
+            <column datatype='string' name='STABBR' ordinal='9' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>INSTNM</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[INSTNM]</local-name>
+            <parent-name>[College 2012 (Only the useful columns)#csv]</parent-name>
+            <remote-alias>INSTNM</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SAT_AVG_2012</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SAT_AVG_2012]</local-name>
+            <parent-name>[College 2012 (Only the useful columns)#csv]</parent-name>
+            <remote-alias>SAT_AVG_2012</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ADM_RATE_2012</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ADM_RATE_2012]</local-name>
+            <parent-name>[College 2012 (Only the useful columns)#csv]</parent-name>
+            <remote-alias>ADM_RATE_2012</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>UGDS_2012</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[UGDS_2012]</local-name>
+            <parent-name>[College 2012 (Only the useful columns)#csv]</parent-name>
+            <remote-alias>UGDS_2012</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CONTROL_2012</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CONTROL_2012]</local-name>
+            <parent-name>[College 2012 (Only the useful columns)#csv]</parent-name>
+            <remote-alias>CONTROL_2012</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COSTT4_A_2012</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[COSTT4_A_2012]</local-name>
+            <parent-name>[College 2012 (Only the useful columns)#csv]</parent-name>
+            <remote-alias>COSTT4_A_2012</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>C150_4_2012</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[C150_4_2012]</local-name>
+            <parent-name>[College 2012 (Only the useful columns)#csv]</parent-name>
+            <remote-alias>C150_4_2012</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PREDDEG_2012</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PREDDEG_2012]</local-name>
+            <parent-name>[College 2012 (Only the useful columns)#csv]</parent-name>
+            <remote-alias>PREDDEG_2012</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CITY</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CITY]</local-name>
+            <parent-name>[College 2012 (Only the useful columns)#csv]</parent-name>
+            <remote-alias>CITY</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>STABBR</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[STABBR]</local-name>
+            <parent-name>[College 2012 (Only the useful columns)#csv]</parent-name>
+            <remote-alias>STABBR</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[College 2012 (Only the useful columns)#csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;ibm-5348_P100-1997&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Adm Rate 2012' datatype='real' name='[ADM_RATE_2012]' role='measure' type='quantitative' />
+      <column caption='C150 4 2012' datatype='real' name='[C150_4_2012]' role='measure' type='quantitative' />
+      <column caption='City' datatype='string' name='[CITY]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Control 2012' datatype='integer' name='[CONTROL_2012]' role='measure' type='quantitative' />
+      <column caption='Costt4 A 2012' datatype='integer' name='[COSTT4_A_2012]' role='measure' type='quantitative' />
+      <column caption='Instnm' datatype='string' name='[INSTNM]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Preddeg 2012' datatype='integer' name='[PREDDEG_2012]' role='measure' type='quantitative' />
+      <column caption='Sat Avg 2012' datatype='integer' name='[SAT_AVG_2012]' role='measure' type='quantitative' />
+      <column caption='Stabbr' datatype='string' name='[STABBR]' role='dimension' type='nominal' />
+      <column caption='Ugds 2012' datatype='integer' name='[UGDS_2012]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.5' measure-ordering='alphabetic' measure-percentage='0.4' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='College 2013 (Only the useful columns)' name='textscan.42323.911303043984' />
+            <datasource caption='College 2012 (Only the useful columns)' name='textscan.42323.911456365742' />
+          </datasources>
+          <datasource-dependencies datasource='textscan.42323.911303043984'>
+            <column caption='Costt4 A' datatype='integer' name='[COSTT4_A]' role='measure' type='quantitative' />
+            <column caption='Stabbr' datatype='string' name='[STABBR]' role='dimension' type='nominal' />
+            <column-instance column='[COSTT4_A]' derivation='Avg' name='[avg:COSTT4_A:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[STABBR]' derivation='None' name='[none:STABBR:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='textscan.42323.911456365742'>
+            <column caption='Costt4 A 2012' datatype='integer' name='[COSTT4_A_2012]' role='measure' type='quantitative' />
+            <column-instance column='[COSTT4_A_2012]' derivation='Avg' name='[avg:COSTT4_A_2012:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[textscan.42323.911303043984].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[textscan.42323.911303043984].[avg:COSTT4_A:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[textscan.42323.911456365742].[avg:COSTT4_A_2012:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[textscan.42323.911303043984].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[textscan.42323.911303043984].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[textscan.42323.911303043984].[Multiple Values]</rows>
+        <cols>([textscan.42323.911303043984].[none:STABBR:nk] / [textscan.42323.911303043984].[:Measure Names])</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows>
+    <window class='schema' source-height='-1' />
+    <window auto-hidden='0' class='worksheet' maximized='1' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+            <card pane-specification-id='0' param='[textscan.42323.911303043984].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <highlight>
+        <color-one-way>
+          <field>[textscan.42323.911303043984].[:Measure Names]</field>
+          <field>[textscan.42323.911303043984].[none:STABBR:nk]</field>
+        </color-one-way>
+      </highlight>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      RU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
