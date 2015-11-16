@@ -3,9 +3,6 @@ require("RCurl")
 require("extrafont")
 require("ggplot2")
 
-KPI_Low_Max_value = .5    
-KPI_Medium_Max_value = 30000
-
 df <- data.frame(fromJSON(getURL(URLencode(gsub("\n", " ", 'skipper.cs.utexas.edu:5001/rest/native/?query=
 "select CONTROL, TotalCost, SchoolSize, AVG(C150_4) as GradRate
 from (select CONTROL, SchoolSize, C150_4,
@@ -27,7 +24,7 @@ AND C150_4 is NOT NULL
 AND Ugds is NOT NULL)))
 Group By CONTROL, SchoolSize, TotalCost
 Order By CONTROL, TotalCost, SchoolSize"
-')), httpheader=c(DB='jdbc:oracle:thin:@sayonara.microlab.cs.utexas.edu:1521:orcl', USER='C##cs329e_jjp378', PASS='orcl_jjp378', MODE='native_mode', MODEL='model', returnDimensions = 'False', returnFor = 'JSON'), verbose = TRUE))); View(df);
+')), httpheader=c(DB='jdbc:oracle:thin:@sayonara.microlab.cs.utexas.edu:1521:orcl', USER='C##cs329e_jjp378', PASS='orcl_jjp378', MODE='native_mode', MODEL='model', returnDimensions = 'False', returnFor = 'JSON'), verbose = TRUE)));
 
 df$CONTROL[df$CONTROL == 1] <- "Public"
 df$CONTROL[df$CONTROL == 2] <- "Private Nonprofit"
