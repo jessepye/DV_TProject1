@@ -33,3 +33,9 @@ Our chart looks at the graduation rates of different types of schools. To form t
 ```{r}
 source("../03 R SQL Visualizations/Crosstab.R",echo=TRUE)
 ```
+
+***
+
+Finally, we blended two data sources: the college data from 2013 with the college data from 2012. Here, we blended over the "U.S. State" category, allowing us to compare the two years side by side. In this visualization, we compare average cost of college per state for the years 2012 and 2013.
+
+![](BlendedData.jpg)
