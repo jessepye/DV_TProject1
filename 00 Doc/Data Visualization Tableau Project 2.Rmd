@@ -1,0 +1,30 @@
+---
+title: "Data Visualization Tableau Project 2 - U.S. College Data"
+author: "Daniel Schlomer, Jesse Pye"
+date: Nov. 13, 2015
+output: html_document
+---
+
+This is an html file that documents the steps to reproduce our project . This html file presents a visual story about our data and what we discovered about our data using visualization and workflow techniques.
+
+In this project, we recreated our visualizations from TProject1 using R and SQL. We also showed an example of blending two data sources.
+
+***
+
+For our first analysis, by comparing two measures, we created a scatter plot, comparing average SAT scores against admission rates. 
+
+First image:
+![](Scatterplot.jpg)
+
+***
+
+For our second analysis, we looked at the cost of persuing different degrees at schools with 20,000 students or more. In this bar chart, colleges are grouped according to the most popular degree type from that university and by their cost. "Low"" cost colleges cost less than $15,000/year, (including tuition, books, and living expenses), "medium" cost less than $30,000, and "high" cost more than $30,000. 
+
+Second image:
+![](Bar Chart.jpg)
+
+***
+
+Our chart looks at the graduation rates of different types of schools. To form the crosstab, we used the governance type, total cost and school size as dimensions. Dividing the schools into these categories provided a look into how students perform at different types of schools. Our KPI is a measure of how many students graduate the college.  For-profit colleges have the lowest graduation rates and never rise above the 50% mark. As schools get larger, they typically have higher graduation rates.
+Third image:
+![](Crosstab w KPI.jpg)
